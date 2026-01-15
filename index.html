@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Secure Cloud Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Secure Cloud Notes</h2>
+
+  <div id="auth">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="register()">Register</button>
+    <button onclick="login()">Login</button>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <hr>
+
+  <div id="notes">
+    <input type="text" id="note" placeholder="Enter note">
+    <button onclick="addNote()">Add Note</button>
+    <ul id="noteList"></ul>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
